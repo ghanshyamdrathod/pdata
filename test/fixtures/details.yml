@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  address: MyString
+  avatar: MyString
+  police_station: MyString
+  crn: MyString
+  sections: MyString
+  crime_details: MyString
+  last_arrest: MyString
+  record_type: MyString
+
+two:
+  name: MyString
+  address: MyString
+  avatar: MyString
+  police_station: MyString
+  crn: MyString
+  sections: MyString
+  crime_details: MyString
+  last_arrest: MyString
+  record_type: MyString

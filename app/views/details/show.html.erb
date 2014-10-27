@@ -1,0 +1,52 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @detail.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @detail.address %>
+</p>
+
+<p>
+  <strong>Avatar:</strong>
+  <%= image_tag @detail.avatar_url(:medium_thumb) if @detail.avatar? %>
+  <%#= @detail.avatar %>
+</p>
+
+<p>
+  <strong>Record type:</strong>
+  <%= @detail.record_type %>
+</p>
+
+
+<p>
+  <strong>Police station:</strong>
+  <%= @detail.police_station %>
+</p>
+
+<p>
+  <strong>Crime Record Number:</strong>
+  <%= @detail.crn %>
+</p>
+
+<p>
+  <strong>Sections:</strong>
+  <%= @detail.sections %>
+</p>
+
+<p>
+  <strong>Crime details:</strong>
+  <%= @detail.crime_details %>
+</p>
+
+<p>
+  <strong>Last arrest:</strong>
+  <%= @detail.last_arrest %>
+</p>
+
+
+<%= link_to 'Edit', edit_detail_path(@detail) %> |
+<%= link_to 'Back', details_path %>
