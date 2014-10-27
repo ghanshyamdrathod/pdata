@@ -69,6 +69,6 @@ class DetailsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def detail_params
-      params.require(:detail).permit(:name, :address, :avatar, :police_station, :crn, :sections, :crime_details, :last_arrest, :record_type)
+      params.require(:detail).permit(:name, :address, :avatar, :police_station, :crn, :sections, :crime_details, :last_arrest, :record_type, :reference_no, :history, :remarks, :remarks2, :latest_activity)
     end
 end

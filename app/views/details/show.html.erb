@@ -1,51 +1,129 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @detail.name %>
-</p>
 
-<p>
-  <strong>Address:</strong>
-  <%= @detail.address %>
-</p>
+<table width="60%">
+  <tr>
+    <td>
+      <strong>Name:</strong>
+      <%= @detail.name %>
 
-<p>
-  <strong>Avatar:</strong>
-  <%= image_tag @detail.avatar_url(:medium_thumb) if @detail.avatar? %>
-  <%#= @detail.avatar %>
-</p>
+    </td>
+    <td>
+      <strong>Record type:</strong>
+      <%= @detail.record_type %>
 
-<p>
-  <strong>Record type:</strong>
-  <%= @detail.record_type %>
-</p>
+    </td>
+  </tr>
 
 
-<p>
-  <strong>Police station:</strong>
-  <%= @detail.police_station %>
-</p>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
 
-<p>
-  <strong>Crime Record Number:</strong>
-  <%= @detail.crn %>
-</p>
+  <tr>
+    <td>
+      <strong>Avatar:</strong>
+      <%= image_tag @detail.avatar_url(:medium_thumb) if @detail.avatar? %>
+    </td>
+    <td>
+      <strong>Address:</strong>
+      <%= @detail.address %>
+    </td>
+  </tr>
 
-<p>
-  <strong>Sections:</strong>
-  <%= @detail.sections %>
-</p>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
 
-<p>
-  <strong>Crime details:</strong>
-  <%= @detail.crime_details %>
-</p>
+  <tr>
+    <td>
+      <strong>Sections:</strong>
+      <%= @detail.sections %>
+    </td>
+    <td>
+      <strong>Crime details:</strong>
+      <%= @detail.crime_details %>
+    </td>
+  </tr>
 
-<p>
-  <strong>Last arrest:</strong>
-  <%= @detail.last_arrest %>
-</p>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+  <tr>
+    <td>
+      <strong>Police station:</strong>
+      <%= @detail.police_station %>
+    </td>
+    <td>
+      <strong>Reference Number:</strong>
+      <%= @detail.reference_no %>
+    </td>
+  </tr>
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+  <tr>
+    <td>
+      <strong>Remarks:</strong>
+      <%= @detail.remarks %>
+    </td>
+    <td>
+      <strong>Remarks2:</strong>
+      <%= @detail.remarks2 %>
+    </td>
+  </tr>
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+  <tr>
+    <td>
+      <strong>History:</strong>
+      <%= @detail.history %>
+    </td>
+    <td>
+      <strong>Latest Activity:</strong>
+      <%= @detail.latest_activity %>
+    </td>
+  </tr>
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+  <tr>
+    <td>
+      <strong>Crime Record Number:</strong>
+      <%= @detail.crn %>
+    </td>
+    <td>
+      <strong>Last arrest:</strong>
+      <%= @detail.last_arrest %>
+    </td>
+  </tr>
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+</table>
+
 
 
 <%= link_to 'Edit', edit_detail_path(@detail) %> |
