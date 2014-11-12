@@ -1,5 +1,17 @@
 Rails.application.routes.draw do
-  resources :details
+  
+
+  resources :details do
+    member do
+      get 'fetch'
+    end
+
+    collection do
+      get 'all_json'
+    end
+
+  end
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

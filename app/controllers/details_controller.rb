@@ -7,6 +7,18 @@ class DetailsController < ApplicationController
     @details = Detail.all
   end
 
+  def all_json
+    render :json => Detail.all
+  end
+
+  def fetch
+    detail = Detail.find_by_id(params[:id])
+
+    detail = detail.nil? ? {} : detail
+    render :json => detail
+  end
+
+
   # GET /details/1
   # GET /details/1.json
   def show
