@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  case_no: MyString
+  serial_no: MyString
+  company: MyString
+  model_no: MyString
+  mac_id: MyString
+  stolen_date: 2014-11-17
+  stolen_place: MyString
+  remarks: MyString
+  cr_no: MyString
+  image: MyString
+
+two:
+  user_id: 1
+  case_no: MyString
+  serial_no: MyString
+  company: MyString
+  model_no: MyString
+  mac_id: MyString
+  stolen_date: 2014-11-17
+  stolen_place: MyString
+  remarks: MyString
+  cr_no: MyString
+  image: MyString

@@ -1,0 +1,62 @@
+<%= form_for(@laptop) do |f| %>
+  <% if @laptop.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@laptop.errors.count, "error") %> prohibited this laptop from being saved:</h2>
+
+      <ul>
+      <% @laptop.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%#= f.label :user_id %><br>
+    <%= f.hidden_field :user_id, :value => current_user.id %>
+    <%#= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :case_no %><br>
+    <%= f.text_field :case_no %>
+  </div>
+  <div class="field">
+    <%= f.label :serial_no %><br>
+    <%= f.text_field :serial_no %>
+  </div>
+  <div class="field">
+    <%= f.label :company %><br>
+    <%= f.text_field :company %>
+  </div>
+  <div class="field">
+    <%= f.label :model_no %><br>
+    <%= f.text_field :model_no %>
+  </div>
+  <div class="field">
+    <%= f.label :mac_id %><br>
+    <%= f.text_field :mac_id %>
+  </div>
+  <div class="field">
+    <%= f.label :stolen_date %><br>
+    <%= f.date_select :stolen_date %>
+  </div>
+  <div class="field">
+    <%= f.label :stolen_place %><br>
+    <%= f.text_field :stolen_place %>
+  </div>
+  <div class="field">
+    <%= f.label :remarks %><br>
+    <%= f.text_field :remarks %>
+  </div>
+  <div class="field">
+    <%= f.label :cr_no %><br>
+    <%= f.text_field :cr_no %>
+  </div>
+  <div class="field">
+    <%= f.label :image %><br>
+    <%= f.text_field :image %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

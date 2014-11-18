@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @laptop.user_id %>
+</p>
+
+<p>
+  <strong>Case no:</strong>
+  <%= @laptop.case_no %>
+</p>
+
+<p>
+  <strong>Serial no:</strong>
+  <%= @laptop.serial_no %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @laptop.company %>
+</p>
+
+<p>
+  <strong>Model no:</strong>
+  <%= @laptop.model_no %>
+</p>
+
+<p>
+  <strong>Mac:</strong>
+  <%= @laptop.mac_id %>
+</p>
+
+<p>
+  <strong>Stolen date:</strong>
+  <%= @laptop.stolen_date %>
+</p>
+
+<p>
+  <strong>Stolen place:</strong>
+  <%= @laptop.stolen_place %>
+</p>
+
+<p>
+  <strong>Remarks:</strong>
+  <%= @laptop.remarks %>
+</p>
+
+<p>
+  <strong>Cr no:</strong>
+  <%= @laptop.cr_no %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @laptop.image %>
+</p>
+
+<%= link_to 'Edit', edit_laptop_path(@laptop) %> |
+<%= link_to 'Back', laptops_path %>

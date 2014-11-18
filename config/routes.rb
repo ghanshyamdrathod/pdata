@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   
 
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   # devise_for :users
@@ -20,6 +21,13 @@ Rails.application.routes.draw do
     end
 
   end
+
+  resources :laptops do
+    collection do
+      get 'fetch_data'
+    end
+  end
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
