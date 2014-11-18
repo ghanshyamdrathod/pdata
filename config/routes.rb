@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
   
-
-
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   # devise_for :users
@@ -29,6 +27,12 @@ Rails.application.routes.draw do
   end
 
   resources :mobiles do
+    collection do
+      get 'fetch_data'
+    end
+  end
+
+  resources :vehicles do
     collection do
       get 'fetch_data'
     end

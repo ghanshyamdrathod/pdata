@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @vehicle.user_id %>
+</p>
+
+<p>
+  <strong>Case no:</strong>
+  <%= @vehicle.case_no %>
+</p>
+
+<p>
+  <strong>Mv no:</strong>
+  <%= @vehicle.mv_no %>
+</p>
+
+<p>
+  <strong>Engine no:</strong>
+  <%= @vehicle.engine_no %>
+</p>
+
+<p>
+  <strong>Chasis no:</strong>
+  <%= @vehicle.chasis_no %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @vehicle.company %>
+</p>
+
+<p>
+  <strong>Stolen date:</strong>
+  <%= @vehicle.stolen_date %>
+</p>
+
+<p>
+  <strong>Stolen place:</strong>
+  <%= @vehicle.stolen_place %>
+</p>
+
+<p>
+  <strong>Remarks:</strong>
+  <%= @vehicle.remarks %>
+</p>
+
+<p>
+  <strong>Cr no:</strong>
+  <%= @vehicle.cr_no %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @vehicle.image %>
+</p>
+
+<%= link_to 'Edit', edit_vehicle_path(@vehicle) %> |
+<%= link_to 'Back', vehicles_path %>

@@ -1,40 +1,37 @@
-<%= form_for(@laptop) do |f| %>
-  <% if @laptop.errors.any? %>
+<%= form_for(@vehicle) do |f| %>
+  <% if @vehicle.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@laptop.errors.count, "error") %> prohibited this laptop from being saved:</h2>
+      <h2><%= pluralize(@vehicle.errors.count, "error") %> prohibited this vehicle from being saved:</h2>
 
       <ul>
-      <% @laptop.errors.full_messages.each do |message| %>
+      <% @vehicle.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
     </div>
   <% end %>
 
-  <div class="field">
-    <%#= f.label :user_id %>
-    <%= f.hidden_field :user_id, :value => current_user.id %>
-    <%#= f.number_field :user_id %>
-  </div>
+  <%= f.hidden_field :user_id, :value => current_user.id %>
+
   <div class="field">
     <%= f.label :case_no %><br>
     <%= f.text_field :case_no %>
   </div>
   <div class="field">
-    <%= f.label :serial_no %><br>
-    <%= f.text_field :serial_no %>
+    <%= f.label :mv_no %><br>
+    <%= f.text_field :mv_no %>
+  </div>
+  <div class="field">
+    <%= f.label :engine_no %><br>
+    <%= f.text_field :engine_no %>
+  </div>
+  <div class="field">
+    <%= f.label :chasis_no %><br>
+    <%= f.text_field :chasis_no %>
   </div>
   <div class="field">
     <%= f.label :company %><br>
     <%= f.text_field :company %>
-  </div>
-  <div class="field">
-    <%= f.label :model_no %><br>
-    <%= f.text_field :model_no %>
-  </div>
-  <div class="field">
-    <%= f.label :mac_id %><br>
-    <%= f.text_field :mac_id %>
   </div>
   <div class="field">
     <%= f.label :stolen_date %><br>

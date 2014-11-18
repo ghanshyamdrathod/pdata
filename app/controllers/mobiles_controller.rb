@@ -41,7 +41,7 @@ class MobilesController < ApplicationController
 
   private
     def set_detail
-      @laptop = Laptop.find(params[:id])
+      @mobile = Mobile.find(params[:id])
     end
 
     def mobile_params
