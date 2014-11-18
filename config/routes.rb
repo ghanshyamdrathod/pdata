@@ -28,6 +28,11 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :mobiles do
+    collection do
+      get 'fetch_data'
+    end
+  end
 
 
   # The priority is based upon order of creation: first created -> highest priority.

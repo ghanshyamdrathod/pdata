@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @mobile.user_id %>
+</p>
+
+<p>
+  <strong>Case no:</strong>
+  <%= @mobile.case_no %>
+</p>
+
+<p>
+  <strong>Imei:</strong>
+  <%= @mobile.imei %>
+</p>
+
+<p>
+  <strong>Stolen date:</strong>
+  <%= @mobile.stolen_date %>
+</p>
+
+<p>
+  <strong>Stolen place:</strong>
+  <%= @mobile.stolen_place %>
+</p>
+
+<p>
+  <strong>Last sim used:</strong>
+  <%= @mobile.last_sim_used %>
+</p>
+
+<p>
+  <strong>Remarks:</strong>
+  <%= @mobile.remarks %>
+</p>
+
+<p>
+  <strong>Cr no:</strong>
+  <%= @mobile.cr_no %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @mobile.image %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @mobile.company %>
+</p>
+
+<%= link_to 'Edit', edit_mobile_path(@mobile) %> |
+<%= link_to 'Back', mobiles_path %>
