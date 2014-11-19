@@ -18,6 +18,11 @@ class DetailsController < ApplicationController
     render :json => detail
   end
 
+  def index_search
+    all_records = Detail.where("name LIKE ?" , "%#{params[:name]}%")
+
+    render :json => all_records
+  end
 
   # GET /details/1
   # GET /details/1.json

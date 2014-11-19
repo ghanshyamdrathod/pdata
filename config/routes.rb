@@ -16,6 +16,7 @@ Rails.application.routes.draw do
 
     collection do
       get 'all_json'
+      get 'index_search'
     end
 
   end
